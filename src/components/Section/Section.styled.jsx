@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  outline: 2px solid yellow;
-  background-color: lightblue;
-  margin: 20px;
-  width: 500px;
+/* outline: 3px solid tomato; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 30px;
 `;
