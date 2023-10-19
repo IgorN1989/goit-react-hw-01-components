@@ -11,8 +11,15 @@ import {
   StatsQuantity,
 } from './Profile.styled';
 
-export const ProfileCard = props => {
-  const { username, tag, location, avatar, stats } = props;
+import defaultAvatar from 'images/profile-default-avatar.png';
+
+export const ProfileCard = ({
+  username,
+  tag,
+  location,
+  avatar = defaultAvatar,
+  stats,
+}) => {
   return (
     <Profile>
       <UserDescription>

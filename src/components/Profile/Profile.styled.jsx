@@ -26,6 +26,7 @@ export const UserDescription = styled.div`
 
 export const UserAvatar = styled.img`
   width: 200px;
+  height: 200px;
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
@@ -53,12 +54,12 @@ export const UserLocation = styled.p`
   padding: 5px 0;
   font-size: 18px;
   font-weight: 500;
+  font-style: italic;
   color: grey;
 `;
 
 export const UserStats = styled.ul`
   background-color: rgb(6, 152, 242, 0.7);
-  list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
@@ -83,7 +84,7 @@ export const StatsLabel = styled.span`
   margin: 0;
   font-size: 18px;
   font-weight: 500;
-  color: grey;
+  color: #fff;
 `;
 
 export const StatsQuantity = styled.span`
