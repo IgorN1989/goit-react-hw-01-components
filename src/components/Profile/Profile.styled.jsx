@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
-export const Profile = styled.div`
+export const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
-
   justify-content: baseline;
   align-items: center;
+  width: 480px;
 
   background-color: #fff;
-
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 

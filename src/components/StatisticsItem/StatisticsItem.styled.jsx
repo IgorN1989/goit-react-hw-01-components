@@ -6,7 +6,7 @@ export const StatisticsItemContainer = styled.li`
   flex-direction: column;
   align-items: center;
   padding: 30px 0;
-  min-width: 96px;
+  width: 100%;
   border-right: 1px solid grey;
   background-color: ${getRandomHexColor};
 

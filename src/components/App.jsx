@@ -3,46 +3,45 @@ import { Section } from './Section/Section.styled';
 
 // ===============================================
 
-import { ProfileCard } from './Profile/Profile';
-import { StatisticsCard } from './Statistics/Statistics';
-import { FriendListCard } from './FriendList/FriendList';
+import { Profile } from './Profile/Profile';
+import { Statistics } from './Statistics/Statistics';
+import { FriendsList } from './FriendsList/FriendsList';
 import { TransactionHistoryCard } from './TransactionHistory/TransactionHistory';
 
 // ===============================================
 
 import user from 'data/user.json';
 import data from 'data/data.json';
+import friends from 'data/friends.json';
 
-export const App = () => {
-  return (
-    <>
-      <Section>
-        <Header>
-          Task 1 - <Title>Profile</Title>
-        </Header>
-        <ProfileCard {...user} />
-      </Section>
+export const App = () => (
+  <>
+    <Section>
+      <Header>
+        Task 1 - <Title>Profile</Title>
+      </Header>
+      <Profile {...user} />
+    </Section>
 
-      <Section>
-        <Header>
-          Task 2 - <Title>Statistics</Title>
-        </Header>
-        <StatisticsCard title="Upload stats" stats={data} />
-      </Section>
+    <Section>
+      <Header>
+        Task 2 - <Title>Statistics</Title>
+      </Header>
+      <Statistics title="Upload stats" stats={data} />
+    </Section>
 
-      <Section>
+    <Section>
         <Header>
           Task 3 - <Title>Friends List</Title>
         </Header>
-        <FriendListCard />
+        <FriendsList friends={friends} />
       </Section>
 
-      <Section>
-        <Header>
-          Task 4 - <Title>Transaction History</Title>
-        </Header>
-        <TransactionHistoryCard />
-      </Section>
-    </>
-  );
-};
+    <Section>
+      <Header>
+        Task 4 - <Title>Transaction History</Title>
+      </Header>
+      <TransactionHistoryCard />
+    </Section>
+  </>
+);
