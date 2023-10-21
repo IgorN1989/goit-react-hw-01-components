@@ -29,8 +29,8 @@ export const TableHeader = styled.th`
 
 export const TableRow = styled.tr`
   font-weight: 500;
-  background-color: ${({ idx }) => {
-    return idx % 2 === 0 ? 'rgb(128, 128, 128, 0.1)' : '#fff';
+  background-color: ${({ $idx }) => {
+    return $idx % 2 === 0 ? 'rgb(128, 128, 128, 0.1)' : '#fff';
   }};
 
   &:hover {

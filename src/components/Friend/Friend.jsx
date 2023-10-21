@@ -13,7 +13,7 @@ export const Friend = ({
   friendName,
 }) => (
   <FriendContainer>
-    <Status status={status} />
+    <Status $status={status} />
     <FriendAvatar src={friendAvatar} alt={friendName} />
     <FriendName>{friendName}</FriendName>
   </FriendContainer>
