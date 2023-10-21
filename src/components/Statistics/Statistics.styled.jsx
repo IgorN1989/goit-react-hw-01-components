@@ -10,10 +10,6 @@ export const StatisticsContainer = styled.div`
   background-color: #fff;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-  &:hover {
-    cursor: pointer;
-  }
 `;
 
 export const StatisticsTitle = styled.h2`

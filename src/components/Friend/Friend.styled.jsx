@@ -4,7 +4,7 @@ export const FriendContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
-  width: 100%;
+  width: 450px;
   margin: 0;
   padding: 15px;
   background-color: #fff;
@@ -25,12 +25,8 @@ export const Status = styled.span`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: ${props => {
-    if (props.status) {
-      return 'green';
-    } else {
-      return 'red';
-    }
+  background-color: ${({ status }) => {
+    return status === true ? 'green' : 'red';
   }};
   margin: 0;
 `;

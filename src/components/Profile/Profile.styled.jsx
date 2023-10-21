@@ -26,8 +26,6 @@ export const UserDescription = styled.div`
 export const UserAvatar = styled.img`
   width: 200px;
   height: 200px;
-  object-fit: cover;
-  object-position: center;
   border-radius: 50%;
   padding: 5px;
   background-color: rgb(6, 152, 242, 0.7);

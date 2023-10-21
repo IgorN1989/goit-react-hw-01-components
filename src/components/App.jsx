@@ -6,13 +6,14 @@ import { Section } from './Section/Section.styled';
 import { Profile } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
 import { FriendsList } from './FriendsList/FriendsList';
-import { TransactionHistoryCard } from './TransactionHistory/TransactionHistory';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 
 // ===============================================
 
 import user from 'data/user.json';
 import data from 'data/data.json';
 import friends from 'data/friends.json';
+import transactions from 'data/transactions.json';
 
 export const App = () => (
   <>
@@ -31,17 +32,17 @@ export const App = () => (
     </Section>
 
     <Section>
-        <Header>
-          Task 3 - <Title>Friends List</Title>
-        </Header>
-        <FriendsList friends={friends} />
-      </Section>
+      <Header>
+        Task 3 - <Title>Friends List</Title>
+      </Header>
+      <FriendsList friends={friends} />
+    </Section>
 
     <Section>
       <Header>
         Task 4 - <Title>Transaction History</Title>
       </Header>
-      <TransactionHistoryCard />
+      <TransactionHistory transactions={transactions}/>
     </Section>
   </>
 );
