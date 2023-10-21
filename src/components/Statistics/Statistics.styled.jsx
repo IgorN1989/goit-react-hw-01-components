@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StatisticsContainer = styled.div`
+export const StatisticsContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: baseline;

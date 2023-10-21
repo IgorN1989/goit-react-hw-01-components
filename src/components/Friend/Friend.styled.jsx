@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FriendContainer = styled.div`
+export const FriendContainer = styled.li`
   display: flex;
   align-items: center;
   gap: 20px;
