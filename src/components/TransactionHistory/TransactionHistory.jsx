@@ -1,9 +1,6 @@
 import {
   Table,
-  TableHead,
-  TableHeadRow,
   TableHeader,
-  TableBody,
   TableRow,
   TableData,
 } from './TransactionHistory.styled';
